@@ -1,1 +1,367 @@
-/* место для вашего кода */
+.page{
+    min-width: 1100px;
+    margin: 0 auto;
+}
+
+.body{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 1340px;
+    height: 109px;
+    display: flex;
+    margin: 92px auto 0;
+    justify-content: space-between;
+}
+
+.header__menu{
+    display: flex;
+    gap: 32px;
+}
+
+ul{
+    list-style: circle;
+}
+
+.header__menu-link{
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bullet{
+    list-style-type: none;
+}
+
+.header__contacts{
+    display: grid;
+    width: 240px;
+    height: 97px;
+    justify-self: end;
+    list-style-type: none;
+    align-self: stretch;
+}
+
+.header__contact{
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */
+    margin: 0;
+}
+
+.logo{
+    margin: 0 auto 4;
+}
+
+.jambotron{
+    width: 1440px;
+    height: 757px;
+    background-image: url(../images/cover.jpg);
+    margin-top: 74px;
+}
+
+.jambotron__title{
+    width: 1340px;
+    height: 355px;
+    padding: 165px 50px 0;
+}
+
+.jambotron__title-text{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%; /* 115px */
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    display: flow-root;
+}
+
+.jambotron__title-text_left{
+    text-align: left;
+}
+
+.jambotron__title-text_center{
+    text-align: center;
+    padding: 20px auto 20px;
+}
+
+.jambotron__title-text_right{
+    text-align: right;
+}
+
+.jambotron__title-text_left-lse{
+    letter-spacing: 60px;
+}
+
+.jambotron__title-text_center-lse{
+    letter-spacing: 60px;
+}
+
+.jambotron__title-text_right-lse{
+    letter-spacing: 30px;
+}
+
+.jambotron__sub-but{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 147px;
+    padding-right: 50px;
+}
+
+.jambotron__subline{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+    padding-bottom: 62px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 78px;
+    word-spacing: 20px;
+}
+
+.jambotron__button{
+    border: 1px solid #FFF;
+    width: 257px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.jambotron__button-text{
+    display: flex;
+    align-items: center;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.lots{
+    width: 1340px;
+    height: 579px;
+    margin: 198px 50px 0;
+    
+}
+
+.lots__title{
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-bottom: 27px;
+    margin: 0;
+}
+
+.lots__grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lot1{
+    width: 430px;
+    height: 450px;
+    background-image: url(../images/card-lot-01.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.lot2{
+    width: 430px;
+    height: 450px;
+    background-image: url(../images/card-lot-02.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lot3{
+    width: 430px;
+    height: 450px;
+    background-image: url(../images/card-lot-03.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lot__title{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 350px;
+    margin: 0;
+}
+
+.lot__text{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 350px;
+    margin: 0;
+}
+
+.lot__image{
+    width: 430px;
+    height: 450px;
+}
+
+.lots__more{
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+    padding-left: 40px;
+    display: flex;
+}
+
+.about{
+    width: 1340px;
+    height: 487px;
+    margin: 181px 50px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about__logo-column{
+    display: flex;
+    width: 430px;
+    height: 240px;
+    padding-right: 95px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.about__logo{
+    background-image: url(../first_project/images/Ellipse\ 10.svg);
+    width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__logo-white{
+    width: 148px;
+    height: 114px;
+}
+
+.about-column{
+    padding-top: 100px;
+}
+
+.about__title{
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-bottom: 100px;
+}
+
+.about__text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.about__text:nth-of-type(1){
+    padding-bottom: 25px;
+}
+
+.footer{
+    margin: 180px 50px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts{
+    width: 240px;
+    height: 97px;
+}
+
+.footer__contact{
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */
+    margin: 0;
+}
+
+.footer__menu{
+    width: 149px;
+    height: 64px;
+}
+
+.footer__menu-link{
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__socials{
+    width: 240px;
+    height: 48px;
+}
