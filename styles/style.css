@@ -11,7 +11,6 @@
 
 .header{
     width: 1340px;
-    height: 109px;
     display: flex;
     margin: 92px auto 0;
     justify-content: space-between;
@@ -28,7 +27,7 @@ ul{
 
 .header__menu-link{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -42,7 +41,6 @@ ul{
 .header__contacts{
     display: grid;
     width: 240px;
-    height: 97px;
     justify-self: end;
     list-style-type: none;
     align-self: stretch;
@@ -50,7 +48,17 @@ ul{
 
 .header__contact{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */
+    margin: 0;
+}
+
+.header__adress{
+    color: #000;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -60,24 +68,25 @@ ul{
 
 .logo{
     margin: 0 auto 4;
+    width: 148px;
+    height: 105px;
 }
 
 .jambotron{
-    width: 1440px;
-    height: 757px;
+    max-width: 1440px;
     background-image: url(../images/cover.jpg);
     margin-top: 74px;
+    margin: auto;
 }
 
 .jambotron__title{
     width: 1340px;
-    height: 355px;
     padding: 165px 50px 0;
 }
 
 .jambotron__title-text{
     color: #FFF;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
@@ -118,12 +127,13 @@ ul{
     justify-content: right;
     padding-top: 147px;
     padding-right: 50px;
+    align-items: baseline;
 }
 
 .jambotron__subline{
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -144,34 +154,29 @@ ul{
     flex-shrink: 0;
     display: flex;
     justify-content: center;
-    
-}
-
-.jambotron__button-text{
-    display: flex;
+    cursor: pointer;
+    background-color: transparent;
     align-items: center;
-    
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     list-style: none;
+    text-transform: uppercase;
 }
 
 .lots{
     width: 1340px;
-    height: 579px;
     margin: 198px 50px 0;
-    
 }
 
 .lots__title{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -188,9 +193,17 @@ ul{
     justify-content: space-between;
 }
 
-.lot1{
+.lot{
     width: 430px;
-    height: 450px;
+    background-image: url(../images/card-lot-01.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lot_pic1{
+    width: 430px;
+    min-height: 450px;
     background-image: url(../images/card-lot-01.jpg);
     display: flex;
     flex-direction: column;
@@ -198,26 +211,33 @@ ul{
     
 }
 
-.lot2{
+.lot_pic2{
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     background-image: url(../images/card-lot-02.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.lot3{
+.lot_pic3{
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     background-image: url(../images/card-lot-03.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.lot_dark{
+    background-color: lightgray;
+    opacity: 50%;
+    list-style-type: none;
+}
+
 .lot__title{
     color: #FFF;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -233,7 +253,7 @@ ul{
 
 .lot__text{
     color: #FFF;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -252,7 +272,7 @@ ul{
 
 .lots__more{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -264,7 +284,6 @@ ul{
 
 .about{
     width: 1340px;
-    height: 487px;
     margin: 181px 50px 0;
     display: flex;
     align-items: flex-start;
@@ -273,22 +292,22 @@ ul{
 .about__logo-column{
     display: flex;
     width: 430px;
-    height: 240px;
     padding-right: 95px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-
 }
 
 .about__logo{
-    background-image: url(../first_project/images/Ellipse\ 10.svg);
+    background-image: url(../images/Ellipse\ 10.svg);
+    background-repeat: no-repeat;
     width: 240px;
     height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .about__logo-white{
     width: 148px;
@@ -301,7 +320,7 @@ ul{
 
 .about__title{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -313,7 +332,7 @@ ul{
 
 .about__text{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -333,12 +352,21 @@ ul{
 
 .footer__contacts{
     width: 240px;
-    height: 97px;
 }
 
 .footer__contact{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */
+    margin: 0;
+}
+
+.footer__address{
+    color: #000;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -348,13 +376,12 @@ ul{
 
 .footer__menu{
     width: 149px;
-    height: 64px;
 }
 
 .footer__menu-link{
     color: #000;
     text-align: center;
-    font-family: Raleway;
+    font-family: 'Raleway', ‘Arial’, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -363,5 +390,12 @@ ul{
 
 .footer__socials{
     width: 240px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socials-icons{
+    width: 48px;
     height: 48px;
 }
