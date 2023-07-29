@@ -1,2 +1,2 @@
 # Оно тебе надо
-https://github.com/dumangy/you_need_it
+https://github.com/dumangy/ono-tebe-nado
